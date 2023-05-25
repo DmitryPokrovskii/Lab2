@@ -1,25 +1,32 @@
 package com.raywenderlich.android.lab1.screens
 
+import androidx.compose.material.ScaffoldState
 import androidx.compose.runtime.Composable
-import com.raywenderlich.android.lab1.R
 import com.raywenderlich.android.lab1.router.BackButtonHandler
 import com.raywenderlich.android.lab1.router.FundamentalsRouter
 import com.raywenderlich.android.lab1.router.Screen
 
-val THREE_ELEMENTS_LIST = listOf(R.string.first, R.string.second, R.string.third)
-
 
 @Composable
-fun RowScreen(){
-    MyRow()
+fun ScaffoldScreen(){
+    MyScaffold()
 
-    BackButtonHandler{
+    BackButtonHandler {
         FundamentalsRouter.navigateTo(Screen.Navigation)
     }
+}
+
+@Composable
+fun MyScaffold() {
+    TODO("soon")
+}
+
+@Composable
+fun MyTopAppBar(scaffoldState: ScaffoldState){
 
 }
 
 @Composable
-fun MyRow() {
-    TODO("Not yet implemented")
+fun MyBottomAppBar(){
+
 }
