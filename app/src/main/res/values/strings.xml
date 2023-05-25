@@ -20,5 +20,6 @@
     <string name="Scaffold">Контейнер Scaffold</string>
     <string name="Menu">Меню</string>
     <string name="MyComposeMap">MyComposeMap</string>
-
+    <string name="covers">Обложки книг</string>
+    <string name="List">List</string>
 </resources>
