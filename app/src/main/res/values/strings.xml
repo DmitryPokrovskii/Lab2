@@ -16,5 +16,9 @@
     <string name="second">Второй</string>
     <string name="third">Третий</string>
     <string name="Row">Контейнер Row</string>
+    <string name="Surface">Контейнер Surface</string>
+    <string name="Scaffold">Контейнер Scaffold</string>
+    <string name="Menu">Меню</string>
+    <string name="MyComposeMap">MyComposeMap</string>
 
 </resources>

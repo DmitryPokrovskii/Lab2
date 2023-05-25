@@ -1,6 +1,7 @@
 package com.raywenderlich.android.lab1.screens
 
 
+import android.text.style.BackgroundColorSpan
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
@@ -35,6 +36,7 @@ fun NavigationScreen() {
             NavigationButton(stringResource(id = R.string.button_progress), Screen.ProgressIndicator)
             NavigationButton(stringResource(id = R.string.button_alertDialog), Screen.AlertDialog)
             NavigationButton(stringResource(id = R.string.Row), Screen.Row)
+            NavigationButton(stringResource(id = R.string.Surface), Screen.Surface)
         }
     }
 }
@@ -45,8 +47,8 @@ fun NavigationButton(text: String, screen: Screen) {
         modifier = Modifier
             .fillMaxWidth()
             .padding(start = 16.dp, end = 16.dp, top = 16.dp),
-        shape = RoundedCornerShape(4.dp),
-        colors = ButtonDefaults.buttonColors(backgroundColor = colorResource(id = R.color.blue)),
+        shape = RoundedCornerShape(12.dp),
+        colors = ButtonDefaults.buttonColors(backgroundColor = colorResource(id = R.color.teal_700)),
         onClick = { FundamentalsRouter.navigateTo(screen) }
     ) {
         Text(
